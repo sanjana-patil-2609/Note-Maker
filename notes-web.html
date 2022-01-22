@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Notes</title>
+    <link rel="stylesheet" href="notes-web.css">
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="icon"><b>Note Maker</b></div>
+        <div class="search-box">
+            <input type="search" placeholder="Search here" id="search-text">
+            <span class="fa fa-search"></span>
+        </div>
+        <ol>
+            <li><a href="#add-note-section">Add Notes</a></li>
+            <li><a href="#notes">Show Notes</a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
+
+    <div class="container">
+        <h1 class="title center">Welcome to Notes Maker</h1>
+        <div class="card" id="#add-note-section">
+            <div class="card-body">
+                <h5 class="card-title">Add a note</h5>
+                <textarea class="card-text" id="addtext"></textarea>
+                <button id="add">Add</button>
+            </div>
+        </div>
+        <h2>Your Notes</h2>
+    </div>
+    <hr>
+    <div id="notes" class="notes-container">
+    </div>
+    
+</body>
+<script src="notes-web.js"></script>
+
+</html>
